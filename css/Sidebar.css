@@ -1,0 +1,17 @@
+#sidebar {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  height: 100%;
+  width: 0;
+  top: 0;
+  position: fixed;
+  transition: width 0.35s ease-in-out;
+}
+
+#sidebar.collapsed {
+  width: 100%;
+}
+
+.sidebar__content {
+  z-index: 11;
+}
