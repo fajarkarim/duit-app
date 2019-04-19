@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"/>
     <title>Duit App</title>
   </head> 
@@ -15,12 +16,20 @@
       <div id="app__layout" class="flex justify-center bg-black-05">
         <div id="app__container" class="w-100 w-50-l w-50-m vh-100 bg-black-20">
 
-          <header class="relative bg-black-50 h3">
-            <div>fajarrr</div>
+          <header class="relative bg-black-50 h3 mt2 ml3 mr3 mb2">
+            <div id="header__content" class="h-50 flex items-center">
+              <i id="menu-bar" class="fas fa-bars fa-lg pointer" onclick="toggleMenu()"></i>
+            </div>      
+            <div id="date" class="h-50">
+              ini tanggal
+            </div>      
           </header> 
 
           <aside id="sidebar">
-            <div class="sidebar__content h-100 w-75 bg-pink"></div>            
+            <div class="sidebar__layout h-100 w-100 bg-pink flex">
+              <div class="sidebar__content h-100 w-75 bg-light-yellow"></div>
+              <div class="sidebar__backdrop h-100 w-25 bg-red" onclick="toggleMenu()"></div>          
+            </div>  
           </aside>
 
           <div class="relative bg-light-yellow h5 ">
